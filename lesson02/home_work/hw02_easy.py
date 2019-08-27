@@ -43,10 +43,14 @@ print(surname)
 
 print('Next level')
 list_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+new_list = []
 print('List is ', list_numbers)
 for itm in range(len(list_numbers)):
     if list_numbers[itm] % 2 == 0:
-        list_numbers[itm] /= 4
+        i = list_numbers[itm] / 4
+        new_list.append(i)
     else:
-        list_numbers[itm] *= 2
-print(list_numbers)
+        n = list_numbers[itm] * 2
+        new_list.append(n)
+
+print(new_list)
