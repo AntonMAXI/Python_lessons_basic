@@ -116,7 +116,6 @@ for f in range(1, len(i)-1):
               l_9.append(i[f])
 
 lst_new = [[l_0], [l_1], [l_2], [l_3], [l_4], [l_5], [l_6], [l_7], [l_8], [l_9]]
-# func = lambda el1, el2: '%s|%s' % (el1, el2)
 for elem in lst_new:
        print(elem)
 text_read.close()
