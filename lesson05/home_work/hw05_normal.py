@@ -1,3 +1,6 @@
+import os
+from def_lesson_five_normal import *
+
 # Задача-1:
 # Напишите небольшую консольную утилиту,
 # позволяющую работать с папками текущей директории.
@@ -13,3 +16,54 @@
 # Для решения данной задачи используйте алгоритмы из задания easy,
 # оформленные в виде соответствующих функций,
 # и импортированные в данный файл из easy.py
+
+print('Добро пожаловать в программу по работе с папками.')
+print('Выберите действие : ')
+print('[1] Перейти в определенную папку(необходимо указать путь)')
+print('[2] Посмотреть содержимое текущей папки')
+print('[3] Удалить папку')
+print('[4] Создать папку')
+print('[q] Для выхода из программы!')
+
+while (True):
+    selector = input('')
+    if selector == '1':
+        pathing()
+    elif selector == '2':
+        inner()
+    elif selector == '3':
+        delet()
+    elif selector == '4':
+        create()
+    elif selector == 'q':
+        print('До свидания!')
+        break
+#Содержание файла def_lesson_five_normal :
+# import os
+# 
+# 
+# def pathing():
+#     sel_1 = input('Введите путь к папке : ')
+#     os.chdir(sel_1)
+#     print(os.getcwd())
+#     return print('Вы перешли в папку : ' + os.path.join(sel_1))
+# 
+# 
+# def inner():
+#     dir_list = os.listdir(os.getcwd())
+#     for i in dir_list:
+#         if os.path.isdir(i) == True:
+#             print(i)
+#     return print(i)
+# 
+# 
+# def delet():
+#     sel_3 = input('Введите путь к папке, которую хотите удалить: ')
+#     os.rmdir(sel_3)
+#     return print('Вы удалили папку : ' + sel_3)
+# 
+# 
+# def create():
+#     sel_4 = input('Введите имя папки : ')
+#     os.mkdir('' + sel_4)
+#     print('Вы создали папку : ' + sel_4)
